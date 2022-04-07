@@ -446,7 +446,7 @@ a {
         border-radius: 10px;
     }
     &__overlay {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
@@ -494,7 +494,7 @@ a {
         border-radius: 10px;
     }
     &__overlay {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
