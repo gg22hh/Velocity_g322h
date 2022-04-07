@@ -94,7 +94,7 @@ a {
         font-size: 25px;
     }
     &__list {
-		margin-left: auto;
+        margin-left: auto;
         display: flex;
         gap: 40px;
         li:first-child {
@@ -145,20 +145,27 @@ a {
         margin-bottom: 106px;
     }
     &__buttons {
-        color: #fff;
-        font-size: 16px;
-        line-height: 21px;
+        display: flex;
+        justify-content: center;
         &-login {
             background-color: #69b9ff;
             border: 1px solid #69b9ff;
             border-radius: 4px;
             padding: 11px 30px;
             margin-right: 20px;
+            color: #fff;
+            font-size: 16px;
+            line-height: 21px;
+            text-transform: uppercase;
         }
         &-learn {
             padding: 11px 30px;
             border: 1px solid #fff;
             border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            line-height: 21px;
+            text-transform: uppercase;
         }
     }
 }
@@ -399,72 +406,194 @@ a {
     text-align: center;
 }
 
-// ---------- ADAPTIVE ----------
+// ---------- Registration ----------
 
-@media(max-width: 964px) {
-	.services {
-		&__box {
-			flex-direction: column;
-			max-width: 500px;
-			margin: 0 auto;
-		}
-	}
-	.benefits {
-		&__box {
-			flex-direction: column;
-			max-width: 300px;
-			margin: 0 auto;
-		}
-	}
-	.tab {
-		padding-bottom: 30px;
-	}
-	.info {
-		&__inner {
-			flex-direction: column;
-			text-align: center;
-		}
-		&__about,
-		&__links,
-		&__social {
-			margin: 0 auto;
-		}
-	}
+.register {
+    display: none;
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        border: unset;
+    }
+    &__form {
+        z-index: 10;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    & input {
+        border-radius: 10px;
+        width: 100%;
+        border: 1px solid black;
+        padding: 7px 10px;
+    }
+    &__button {
+        border: 1px solid black;
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.479);
+        z-index: 5;
+    }
 }
 
-@media(max-width: 631px) {
-	.title,
-	.subtitle {
-		letter-spacing: 1px;
-	}
-	.subtitle {
-		margin-bottom: 30px;
-	}
-	.banner {
-		letter-spacing: 1px;
-		height: 467px;
-		&__title {
-			font-size: 35px;
-			padding-top: 120px;
-			margin-bottom: 60px;
-		}
-		&__buttons {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			gap: 10px;
-			a {
-				margin: 0;
-			}
-		}
-	}
-	.tab {
-		&__buttons {
-			flex-direction: column;
-			margin-bottom: 30px;
-		}
-	}
+.login {
+    display: none;
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        border: unset;
+    }
+    &__form {
+        z-index: 10;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    & input {
+        border-radius: 10px;
+        width: 100%;
+        border: 1px solid black;
+        padding: 7px 10px;
+    }
+    &__button {
+        border: 1px solid black;
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.466);
+        z-index: 5;
+    }
+}
+
+.oneServices__item {
+    text-align: center;
+    &-image {
+        margin-bottom: 30px;
+    }
+    &-title {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &-text {
+        max-width: 500px;
+        margin: 0 auto 30px;
+        font-size: 20px;
+    }
+    &-button {
+        padding: 7px 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+}
+
+// ---------- ADAPTIVE ----------
+
+@media (max-width: 964px) {
+    .services {
+        &__box {
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+    .benefits {
+        &__box {
+            flex-direction: column;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+    .tab {
+        padding-bottom: 30px;
+    }
+    .info {
+        &__inner {
+            flex-direction: column;
+            text-align: center;
+        }
+        &__about,
+        &__links,
+        &__social {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 631px) {
+    .title,
+    .subtitle {
+        letter-spacing: 1px;
+    }
+    .subtitle {
+        margin-bottom: 30px;
+    }
+    .banner {
+        letter-spacing: 1px;
+        height: 467px;
+        &__title {
+            font-size: 35px;
+            padding-top: 120px;
+            margin-bottom: 60px;
+        }
+        &__buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            a {
+                margin: 0;
+            }
+        }
+    }
+    .tab {
+        &__buttons {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media (max-width: 467px) {
@@ -495,7 +624,7 @@ a {
             display: block;
             text-align: center;
             width: 100%;
-			background-color: #fff;
+            background-color: #fff;
             transform: translateY(-107%);
             z-index: 1;
             transition: all 0.5s;

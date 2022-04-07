@@ -19,15 +19,15 @@
                 <menu class="menu">
                     <a href="#" class="menu__logo">Velocity</a>
                     <ul class="menu__list">
-                        <li><a href="#" class="menu__item">Home</a></li>
-                        <li><a href="#" class="menu__item">Contact</a></li>
+                        <li><a href="/" class="menu__item">Home</a></li>
+                        <li><a href="/" class="menu__item">Contact</a></li>
                     </ul>
                     <div class="menu__btn">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-					<div class="adaptive"></div>
+                    <div class="adaptive"></div>
                 </menu>
             </div>
         </header>
@@ -36,13 +36,38 @@
             <div class="container">
                 <h1 class="banner__title">This is Velocity</h1>
                 <div class="banner__buttons">
-                    <a href="#" class="banner__buttons-login">sign up</a>
-                    <a href="#" class="banner__buttons-learn">Learn more</a>
+                    <button class="banner__buttons-login">sign up</button>
+                    <button class="banner__buttons-learn">Login</button>
                 </div>
             </div>
         </div>
 
-		 
+        <div class="register">
+            <form class="register__form">
+                <button type="button" class="register__close">&#10008;</button>
+                <h1 class="register__title">Регистрация</h1>
+                <input type="text" placeholder="Имя" required />
+                <input type="text" placeholder="Фамилия" required />
+                <input type="text" placeholder="Логин" required />
+                <input type="password" placeholder="Пароль" required />
+                <button class="register__button" type="submit">
+                    Отправить
+                </button>
+            </form>
+            <div class="register__overlay"></div>
+        </div>
+
+        <div class="login">
+            <form class="login__form">
+                <button type="button" class="login__close">&#10008;</button>
+                <h1 class="login__title">Вход</h1>
+                <input type="text" placeholder="Логин" required />
+                <input type="password" placeholder="Пароль" required />
+                <button class="login__button" type="submit">Отправить</button>
+            </form>
+            <div class="login__overlay"></div>
+        </div>
+
         <div class="benefits">
             <div class="container">
                 <div class="benefits__title title">what we do</div>
@@ -93,7 +118,6 @@
             </div>
         </div>
 
-		
         <div class="services">
             <div class="container">
                 <div class="services__title title">services</div>
@@ -114,7 +138,9 @@
                             tristique.Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Suspendisse varius.
                         </div>
-                        <a href="#" class="services__item-button">Learn more</a>
+                        <a href="/one.html" class="services__item-button"
+                            >Learn more</a
+                        >
                     </div>
                     <div class="services__item">
                         <img
@@ -129,7 +155,9 @@
                             tristique.Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Suspendisse varius.
                         </div>
-                        <a href="#" class="services__item-button">Learn more</a>
+                        <a href="/two.html" class="services__item-button"
+                            >Learn more</a
+                        >
                     </div>
                 </div>
             </div>
@@ -172,7 +200,7 @@
                 </div>
                 <div class="tab__item2">
                     <img
-                        src="https://rusvesna.su/sites/default/files/russkj_ukrainec.jpg"
+                        src="images/tab2.jpg"
                         alt="image"
                         class="tab__item-image"
                     />
@@ -221,7 +249,6 @@
             </div>
         </div>
 
-		
         <div class="info">
             <div class="container">
                 <div class="info__inner">
@@ -236,34 +263,35 @@
                         </div>
                     </div>
                     <div class="info__links">
-						<h3 class="info__links-title">useful links</h3>
+                        <h3 class="info__links-title">useful links</h3>
                         <ul class="info__links-list">
-                            <li><a href="#">Phasellus gravida semper nisi</a></li>
+                            <li>
+                                <a href="#">Phasellus gravida semper nisi</a>
+                            </li>
                             <li><a href="#">Suspendisse nisl elit</a></li>
                             <li><a href="#">Dellentesque habitant morbi</a></li>
                             <li><a href="#">Etiam sollicitudin ipsum</a></li>
                         </ul>
                     </div>
-					<div class="info__social">
-						<h3 class="info__social-title">social</h3>
-						<ul class="info__social-list">
-							<li><a class="twitter" href="#">Twitter</a></li>
-							<li><a class="facebook" href="#">Facebook</a></li>
-							<li><a class="pinterest" href="#">Pinterest</a></li>
-							<li><a class="google" href="#">Google</a></li>
-							<li><a class="webflow" href="#">Webflow</a></li>
-						</ul>
-					</div>
+                    <div class="info__social">
+                        <h3 class="info__social-title">social</h3>
+                        <ul class="info__social-list">
+                            <li><a class="twitter" href="#">Twitter</a></li>
+                            <li><a class="facebook" href="#">Facebook</a></li>
+                            <li><a class="pinterest" href="#">Pinterest</a></li>
+                            <li><a class="google" href="#">Google</a></li>
+                            <li><a class="webflow" href="#">Webflow</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
-		
-		<footer class="footer">
-			<div class="container">
-					Copyright Velocity Inc. Made in Webflow.
-			</div>
-		</footer>
+        <footer class="footer">
+            <div class="container">
+                Copyright Velocity Inc. Made in Webflow.
+            </div>
+        </footer>
 
         <script src="script.js"></script>
     </body>
